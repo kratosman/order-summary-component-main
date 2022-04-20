@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pale-blue-color: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --font-size-paragraph: 16px;
+    --font-family-red-hat-display: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-color: var(--pale-blue-color);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.container-fluid {
+    width: 407px;
+    height: 630px;
+    background-color: white;
+    margin-inline: auto;
+    border-radius: 10px;
+}
+
+.row-mt1 .img-row img {
+    border-radius: 10px 10px 0 0;
+}
+
+.content {
+    padding-top: 49px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.content .text-header h1 {
+    font-family: var(--font-family-red-hat-display);
+    color: var(--dark-blue);
+}
+
+.content .text-header p {
+    font-family: var(--font-family-red-hat-display);
+    color: var(--desaturated-blue);
+    width: 300px;
+    text-align: center;
+}
+
+.text-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+}
+
+.annual-plan {
+    padding: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 313px;
+    height: 89px;
+    background-color: var(--very-pale-blue);
+}
+
+.annual-plan .text h3 {
+    font-family: var(--font-family-red-hat-display);
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.annual-plan .text p {
+    font-family: var(--font-family-red-hat-display);
+    color: var(--desaturated-blue);
+}
+
+.annual-plan a:hover {
+    color: var(--dark-blue);
+    text-decoration: none;
+}
+
+.button button {
+    width: 318px;
+    height: 47px;
+    border: none;
+    outline: none;
+    background-color: var(--bright-blue);
+    font-family: var(--font-family-red-hat-display);
+    color: var(--pale-blue-color);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.button button:hover {
+    background-color: var(--desaturated-blue);
+}
+
+.button p {
+    font-family: var(--font-family-red-hat-display);
+    text-transform: capitalize;
+    cursor: pointer;
+    color: var(--desaturated-blue);
+    font-weight: 900;
+}
+
+.button p:hover {
+    color: var(--dark-blue);
+    cursor: pointer;
+}
